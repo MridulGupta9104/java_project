@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="801.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject2024.order_delivery_panel.Order_Delivery_Panel_Controller">
+   <children>
+      <Label layoutX="289.0" layoutY="61.0" text="Order Delivery Panel">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtno" layoutX="128.0" layoutY="188.0" prefHeight="39.0" prefWidth="210.0" />
+      <Label layoutX="128.0" layoutY="154.0" text="Mobile Number">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnno" layoutX="406.0" layoutY="187.0" mnemonicParsing="false" onAction="#doFind" text="Find Orders">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="326.0" text="Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="326.0" text="Order ID">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="326.0" text="Bill">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="555.0" layoutY="326.0" text="Item/Dress">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lststs" layoutX="28.0" layoutY="363.0" prefHeight="197.0" prefWidth="131.0" />
+      <ListView fx:id="lstoid" layoutX="198.0" layoutY="363.0" prefHeight="197.0" prefWidth="131.0" />
+      <ListView fx:id="lstbill" layoutX="360.0" layoutY="363.0" prefHeight="197.0" prefWidth="131.0" />
+      <ListView fx:id="lstdrs" layoutX="526.0" layoutY="363.0" prefHeight="197.0" prefWidth="154.0" />
+      <Label layoutX="233.0" layoutY="589.0" text="Total Bill:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="594.0" />
+      <Line endX="100.0" layoutX="426.0" layoutY="616.0" startX="-100.0" />
+      <Button fx:id="btndlvr" layoutX="289.0" layoutY="691.0" mnemonicParsing="false" onAction="#doDeliver" text="Deliver All">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblBill" layoutX="398.0" layoutY="594.0" />
+   </children>
+</AnchorPane>

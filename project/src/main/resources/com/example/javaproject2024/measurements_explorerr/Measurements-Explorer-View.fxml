@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="817.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject2024.measurements_explorer.Measurements_Explorer_Controller">
+   <children>
+      <Label layoutX="210.0" layoutY="55.0" text="Measurements Explorer">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="150.0" text="Order Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="150.0" text="Worker Name">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="150.0" text="All Orders Of Customer">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbOrdrSts" layoutX="59.0" layoutY="187.0" onAction="#doShow" prefWidth="150.0" />
+      <ComboBox fx:id="cmbWrkr" layoutX="252.0" layoutY="187.0" onAction="#doShow" prefWidth="150.0" />
+      <TextField fx:id="txtno" layoutX="453.0" layoutY="188.0" onAction="#doEnb" prefHeight="26.0" prefWidth="204.0" promptText="Enter Mobile Number" />
+      <Button fx:id="btnftch" disable="true" layoutX="681.0" layoutY="188.0" mnemonicParsing="false" onAction="#doFetch" text="Fetch Now" />
+      <Button layoutX="555.0" layoutY="746.0" mnemonicParsing="false" onAction="#doExport" text="Export To Excel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="109.0" layoutY="746.0" mnemonicParsing="false" onAction="#doShowAll" text="Show All Orders">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblView" layoutX="28.0" layoutY="233.0" prefHeight="504.0" prefWidth="785.0" />
+   </children>
+</AnchorPane>
