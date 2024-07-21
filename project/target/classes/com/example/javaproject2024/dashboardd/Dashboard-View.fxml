@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="780.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaproject2024.dashboard.Dashboard_Controller">
+   <children>
+      <Label layoutX="410.0" layoutY="77.0" text="Dashboard">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Line endX="9.0" endY="459.79290771484375" layoutX="292.0" layoutY="333.0" startX="9.0" startY="-333.0" />
+      <Button fx:id="btnCE" disable="true" layoutX="3.0" layoutY="128.0" mnemonicParsing="false" onAction="#openCE" prefHeight="77.0" prefWidth="295.0" text="Customer Enrollment">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMsr" disable="true" layoutX="3.0" layoutY="212.0" mnemonicParsing="false" onAction="#openMsr" prefHeight="77.0" prefWidth="295.0" text="Measurements">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnME" disable="true" layoutX="3.0" layoutY="296.0" mnemonicParsing="false" onAction="#openME" prefHeight="77.0" prefWidth="295.0" text="Measurements Explorer">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDO" disable="true" layoutX="3.0" layoutY="380.0" mnemonicParsing="false" onAction="#openDO" prefHeight="77.0" prefWidth="295.0" text="Deliver Order ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRAO" disable="true" layoutX="3.0" layoutY="463.0" mnemonicParsing="false" onAction="#openRAO" prefHeight="77.0" prefWidth="295.0" text="Allocate/Receive Order">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnWrkr" disable="true" layoutX="3.0" layoutY="547.0" mnemonicParsing="false" onAction="#openSW" prefHeight="77.0" prefWidth="295.0" text="Workers">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnWC" disable="true" layoutX="3.0" layoutY="632.0" mnemonicParsing="false" onAction="#openWC" prefHeight="77.0" prefWidth="295.0" text="Worker Console">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="352.0" layoutY="167.0" text="Order Placed">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="212.0" text="In Progress">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="262.0" text="Product Ready">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="315.0" text="Order Delivered">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOP" disable="true" layoutX="491.0" layoutY="168.0" />
+      <TextField fx:id="txtIP" disable="true" layoutX="491.0" layoutY="214.0" />
+      <TextField fx:id="txtPR" disable="true" layoutX="491.0" layoutY="263.0" />
+      <TextField fx:id="txtOD" disable="true" layoutX="491.0" layoutY="316.0" />
+      <PieChart fx:id="PieChart" layoutX="337.0" layoutY="359.0" prefHeight="309.0" prefWidth="423.0" />
+      <PasswordField fx:id="txtPass" layoutX="359.0" layoutY="722.0" prefHeight="26.0" prefWidth="245.0" />
+      <Button fx:id="btnUnlock" layoutX="662.0" layoutY="722.0" mnemonicParsing="false" onAction="#doUnlock" prefHeight="26.0" prefWidth="63.0" text="Unlock" />
+      <ImageView fitHeight="92.0" fitWidth="190.0" layoutX="105.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="45.0" layoutX="14.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CE.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="14.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Msr.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="3.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ME.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="17.0" layoutY="387.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OD.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="45.0" layoutX="3.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@RAO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="28.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SW.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="17.0" layoutY="639.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WC.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="159.0" layoutY="717.0" onMouseClicked="#doLout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOut.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="60.0" layoutY="717.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AUs.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
